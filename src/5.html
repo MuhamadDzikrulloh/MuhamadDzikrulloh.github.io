@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Website Muhamad Dzikrulloh</title>
+  <link rel="shortcut icon" href="/Public/LOGO.png">
+</head>
+<body style="font-family: Montserrat;">
+
+  <!-- Navbar -->
+<header class="bg-white  body-font shadow-md fixed w-full z-50" style="top: 0px;">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="color:white;">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <span class="ml-3 text-4xl" style="font-family: Stick;">Dz</span>
+    </a>
+    <nav class="md:ml-auto gap-3 flex flex-wrap items-center text-base justify-center text-black">
+      <a href="../index.html"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Home</a>
+      <a href="index.html"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Blog</a>
+      <a href="../index.html#about"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">About</a>
+      <a href="../index.html#contact"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Contact</a>
+	  <a href="Portofolio.html" target="_blank"class="mr-5 hover:text-gray-900 hover:underline">Portofolio</a>
+    </nav>
+  </div>
+</header>
+<!--End Navbar -->
+<!-- Blog -->
+<section class="bg-white dark:bg-gray-900 mt-14">
+  <div class="container px-6 py-10 mx-auto">
+      <div class="text-center">
+          <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Welcome To My Blog</h1>
+
+          <p class="max-w-lg mx-auto mt-4 text-gray-500">
+            Sebuah Blog yang ditulis oleh saya sendiri
+          </p>
+      </div>
+<!-- Open blog 1 -->
+<div class="mt-5">
+    <div>
+        <div class="mt-5 mb-5">
+            <div  class=" mb-5 pb-14 font-semibold text-5xl text-center text-gray-800">
+                Queue (Antrian)
+            </div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/5.png" alt="">
+            <div class="mt-3  ">
+            <h5 class="text-4xl font-semibold">Queue (Antrian)</h5> <br><br>
+            1. Queue (antrian) adalah struktur data dimana proses pengambilan dan penambahan element dilakukan pada ujung yang berbeda. <br>
+           2. Queue mengikuti konsep FIFO.<br>
+            3. FIFO (First In First Out) : elemen yang pertama masuk akan menjadi elemen yang pertama kali keluar<br><br>
+            
+            QUEUE DAN STACK <br>
+
+            Karakteristik yang membedakan queue (antrian) dari stack adalah cara menyimpan dan mengambil data dengan struktur first in first out (FIFO).  <br>  
+            Hal ini berarti elemen pertama yang ditempat-kan pada queue adalah yang pertama dipindahkan. <br><br>
+            ENQUEUE<br><br>
+            Enqueue :<br>
+	1. yaitu proses penambahan elemen pada queue.<br>
+    2. Elemen ditempatkan pada ujung (tail)<br><br>
+    DEQUEUE<br>
+    Dequeue yaitu proses pengambilan elemen pada queue. Memindahkan elemen dari kepala (head) sebuah queue.<br><br>
+    Penambahan dilakukan pada bagian belakang. Sedangkan pengambilan dilakukan pada bagian depan (element yang pertama masuk).<br><br>
+    ILUSTRASI<br><br>
+    <img src="/Public/queu1.JPG" alt=""> <br> <br>
+    KARAKTERISTIK QUEUE <br>
+    1. Elemen antrian yaitu item-item data yang terdapat di elemen antrian<br>
+2. Front<br>
+3. Rear<br>
+4. Jumlah elemen pada antrian (Count)<br>
+5. Status antrian<br><br>
+
+FRONT DAN REAR <br>
+•	Front : pointer bantu yang digunakan untuk menunjuk element yang paling depan. <br>
+•	Rear : pointer bantu yang digunakan untuk menunjuk element yang paling belakang.<br><br>
+STATUS  ANTRIAN<br><br>
+PENUH<br>
+•	Bila elemen pada antrian mencapai kapasitas maksimum antrian.<br>  
+•	Pada kondisi ini, tidak mungkin dilakukan penambahan ke antrian. <br>
+•	Penambahan elemen menyebabkan kondisi kesalahan Overflow.<br><br>
+KOSONG<br>
+•	Bila tidak ada elemen pada antrian.  <br>
+•	Pada kondisi ini, tidak mungkin dilakukan pengambilan elemen dari antrian. <br> 
+•	Pengambilan elemen menyebabkan kondisi kesalahan Underflow.  <br><br>
+OPERASI PADA QUEUE<br>
+•	Deklarasi <br>
+•	Inisialisasi Cek kosong <br>
+•	Cek penuh <br>
+•	Penambahan <br>
+•	Pengambilan <br>
+•	Pengaksesan<br><br>
+DEKLARASI<br>
+•	Proses yang harus dilakukan pertama kali adalah deklarasi/menyiapkan tempat. <br>
+•	Langkah yang harus dilakukan adalah : <br><br>
+1.	Deklarasi class <br>
+2.	Deklarasi struktur data (menggunakan array atau linked list) <br>
+3.	Deklarasi pointer front dan rear <br>
+4.	Deklarasi variabel size untuk menyimpan besar array. <br>
+5.	Deklarasi variabel jumlah untuk mengetahui banyak item yang disimpan pada queue.<br><br>
+INISIALISASI<br>
+•	Merupakan proses pemberian nilai awal. <br><br>
+•	Pada Array : <br>
+1.	Pembentukan obyek array beserta ukurannya.   antrian= new int[10];   (pembentukan obyek array yang memiliki 10 element, dan alamat obyek akan disimpan pada variabel bernama antrian) <br>
+2.	Pemberian nilai awal pada variabel front=0 dan belakang=-1.  front = 0;   rear=-1;  <br>
+Pada Linked List:   Proses inisialisasi dilakukan dengan memberikan nilai awal pada variabel head, tail front dan rear dengan nilai null.<br><br>
+head = tail = front=rear= null;  <br><br>
+
+Fungsi Create   <br>
+Digunakan untuk membentuk dan menunjukan awal terbentuknya suatu Antrean / Queue<br>
+Void Create()  <br>
+{     <br>
+antrian.head = antrian.tail = -1 <br>
+}<br><br>
+
+CEK KOSONG (ISEMPTY)<br>
+•	Operasi yang digunakan untuk mengecek kondisi queue dalam keadaan kosong. <br>
+•	Pada array : menggunakan pengecekan pada variabel jumlah_item. Jika nilainya = 0 berarti queue dalam kondisi kosong.<br> 
+•	Pada linked list : dapat menggunakan pengecekan front atau rear jika nilainya null berarti queue kosong. <br>
+•	Operasi ini harus dapat mengembalikan nilai true jika queue kosong dan false jika sebaliknya.  <br><br>
+CEK PENUH (ISFULL)<br>
+•	Operasi yang hanya dapat diterapkan pada queue yang menggunakan array. <br>
+•	Operasi ini digunakan untuk mengecek kondisi queue dalam keadaan penuh. <br>
+•	Caranya : melihat nilai pada variabel jumlah item. Jika nilainya = size-1 (dimana size adalah ukuran array) maka dapat diindikasikan queue dalam kondisi penuh. <br>
+•	Operasi ini harus dapat mengembalikan nilai true jika queue penuh dan false jika sebaliknya.<br><br>
+Fungsi Enqueue<br>
+•	Untuk menambahkan elemen ke dalam Antrian,  penambahan elemen selalu dilakukan pada  elemen paling belakang  <br>
+•	Penambahan elemen selalu menggerakan variabel  Tail dengan cara menambahkan Tail terlebih dahulu<br>
+•	Digunakan untuk menghapus elemen terdepan (head)  dari Antrian  <br>
+•	Dengan cara : menggeser semua elemen antrian  kedepan dan mengurangi Tail dgn 1. Penggeseran  dilakukan dengan menggunakan looping<br><br>
+Fungsi Clear<br>
+•	Untuk menghapus elemen-elemen Antrian dengan cara membuat Tail dan Head = -1 <br>
+•	Penghapusan elemen-elemen Antrian sebenarnya tidak menghapus arraynya, namun hanya mengeset indeks pengaksesan-nya ke nilai -1 sehingga elemen-elemen Antrian tidak lagi terbaca sehingga mengembalikan antrian seperti keadaan semula<br><br>
+Jenis-jenis Queue<br>
+Secara umum ada 4 jenis struktur data queue, meliputi : <br>
+1.	Simple Queue <br>
+Simple queue adalah struktur data queue paling dasar di mana penyisipan item dilakukan di simpul belakang (rear atau tail) dan penghapusan terjadi di simpul depan (front atau head).  <br>
+2.	Circular Queue <br>
+Pada circular queue, simpul terakhir terhubung ke simpul pertama. Queue jenis ini juga dikenal sebagai Ring Buffer karena semua ujungnya terhubung ke ujung yang lain. Penyisipan terjadi di akhir antrian dan penghapusan di depan antrian.<br>
+3.	Priority Queue <br>
+•	Priority Queue adalah strruktur data queue dimana simpul akan memiliki beberapa prioritas yang telah ditentukan. Simpul dengan prioritas terbesar akan menjadi yang pertama dihapus dari antrian. Sedangkan penyisipan item terjadi sesuai urutan kedatangannya.  <br>
+•	Aplikasi priority queue antara lain algoritma jalur terpendek Dijkstra, algoritma prim, dan teknik kompresi data seperti kode Huffman.<br>
+4.	Double-Ended Queue (Dequeue)<br>
+Dalam double-ended queue (dequeue), operasi penyisipan dan penghapusan dapat terjadi di ujung depan dan belakang dari queue.<br><br>
+ANTRIAN BERPRIORITAS<br>
+•	Struktur data queue umumnya digunakan untuk mengelola thread dalam multithreading dan menerapkan sistem antrian prioritas pada program komputer.<br>
+•	Dalam antrian yang telah dibahas sebelum, semua elemen yang masuk dalam antrian dianggap mempunyai prioritas yang sama, sehingga elemen yang masuk lebih dahulu akan diproses lebih dahulu.<br>
+•	Dalam praktek, elemen-elemen yang akan masuk dalam suatu antrian ada yang dikatakan mempunyai prioritas yang lebih tinggi dibanding yang lain.<br>
+•	Antrian yang demikian ini disebut dengan antrian berprioritas (priority queue).<br><br>
+Fungsi Queue<br>
+Berikut ini adalah beberapa fungsi queue yang paling umum dalam struktur data: <br>
+1.	Queue banyak digunakan untuk menangani lalu lintas (traffic) situs web. <br>
+2.	Membantu untuk mempertahankan playlist yang ada pada aplikasi media player <br>
+3.	Queue digunakan dalam sistem operasi untuk menangani interupsi. <br>
+4.	Membantu dalam melayani permintaan pada satu sumber daya bersama, seperti printer, penjadwalan tugas CPU, dll. <br>
+5.	Digunakan dalam transfer data asinkronus misal pipeline, IO file, dan socket.<br><br>
+
+Kelebihan Queue<br>
+Kelebihan queue di antarnya: <br>
+•	Data dalam jumlah besar dapat dikelola secara efisien. <br>
+•	Operasi seperti penyisipan dan penghapusan dapat dilakukan dengan mudah karena mengikuti aturan masuk pertama keluar pertama. <br>
+•	Queue berguna ketika layanan tertentu digunakan oleh banyak konsumen. <br>
+•	Queue cepat untuk komunikasi antar-proses data. <br>
+•	Queue dapat digunakan dalam implementasi struktur data lainnya.<br><br>
+Kekurangan Queue<br>
+Kelemahan struktur data queue adalah sebagai berikut: <br>
+•	Operasi seperti penyisipan dan penghapusan elemen dari tengah cenderung banyak memakan waktu. <br>
+•	Dalam queue konvensional, elemen baru hanya dapat dimasukkan ketika elemen yang ada dihapus dari antrian. <br>
+•	Mencari elemen data pada struktur queue membutuhkan time complexity O(N). <br>
+•	Ukuran maksimum antrian harus ditentukan sebelumnya.<br>
+
+
+            <p class="mt-3 text-sm text-blue-500 pb-10">Penulis Muhamad Dzikrulloh</p>
+        </div>
+    </div>
+
+<!-- Artikel  1-->
+          <div class="">
+              <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/6.png" alt="">
+
+              <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                  <a href="6..html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                    LINK LIST 
+                  </a>
+
+                  <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                    Dikembangkan tahun 1955-1956 oleh Allen Newell, Cliff Shaw dan Herbert Simon di RAND Corporation sebagai struktur data utama untuk bahasa Information Processing Language (IPL).
+                  </p>
+
+                  <a href="6..html" class="mt-3 text-sm text-blue-500">Read More..</a>
+              </div>
+          </div>
+      </div>
+  </div>
+<!-- Artikel  2-->
+<div class="container px-6 py-10 mx-auto">
+<div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+  <div>
+      <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/1.png" alt="">
+
+      <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+          <a href="1.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+            Pengenalan Stuktur Data Dan Algoritma
+          </a>
+
+          <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+            Struktur data adalah pengaturan data di dalam memori komputer. dengan cara menyimpan, mengambil, dan menyusun data. Struktur data memungkinkan data yang ada di komputer lebih mudah diakses dan diperbarui. 
+          </p>
+
+          <a href="1.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+      </div>
+  </div>
+
+  <div>
+      <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/2.png" alt="">
+
+      <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+          <a href="2.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+            Tipe Data 
+          </a>
+
+          <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+            Adalah tipe data yang hanya bernilai benar (true) atau salah (false). Jangkauan (nilai yang mungkin) hanya 2 yaitu true atau false.
+            ADT (Abstract Data Type) atau Tipe Data Bentukan 
+          </p>
+
+          <a href="2.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+      </div>
+  </div>
+</div>
+</div>
+<!-- Artikel  3-->
+<div class="container px-6 py-10 mx-auto">
+  <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+    <div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/3.png" alt="">
+  
+        <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="3.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                ARRAY DIMENSI 1 & 2 
+            </a>
+  
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                • Array dapat didefinisikan sebagai suatu himpunan hingga elemen yang terurut dan homogen. Terurut : Dapat diartikan bahwa elemen tersebut dapat diidentifikasi sebagai elemen pertama, elemen kedua dan seterusnya sampai elemen ke-n. 
+            </p>
+  
+            <a href="3.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+        </div>
+    </div>
+  
+    <div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/4.png" alt="">
+  
+        <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="4.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                STACK 
+            </a>
+  
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                • Penyimpanan dan pengambilan data yang sangat efektif apabila data yang terakhir masuk adalah data yang akan diambil pertama kali.
+• Tumpukan memungkinkan akses ke satu item data saja, yaitu item terakhir yang disisipkan. 
+            </p>
+  
+            <a href="4.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End Blog -->
+<!-- Footers -->
+<footer class="bg-[#4F927B] text-white mt-16">
+    <div class="flex">
+<div class="w-60 h-20 flex items-center justify-center">
+    <span class="ml-3 text-4xl text-white" style="font-family: Stick;">Dz</span>
+</div>
+<div class=" w-full flex items-center justify-center mr-28 text-center">@2023 Muhamad Dzikrulloh copy right</div>
+</div>
+
+</footer>
+
+</body>
+</html>

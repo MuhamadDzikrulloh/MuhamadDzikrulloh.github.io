@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Website Muhamad Dzikrulloh</title>
+  <link rel="shortcut icon" href="/Public/LOGO.png">
+</head>
+<body style="font-family: Montserrat;">
+
+  <!-- Navbar -->
+<header class="bg-white  body-font shadow-md fixed w-full z-50" style="top: 0px;">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="color:white;">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <span class="ml-3 text-4xl" style="font-family: Stick;">Dz</span>
+    </a>
+    <nav class="md:ml-auto gap-3 flex flex-wrap items-center text-base justify-center text-black">
+      <a href="../index.html"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Home</a>
+      <a href="index.html"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Blog</a>
+      <a href="../index.html#about" target="_blank"class="mr-5 hover:text-gray-900 hover:underline">About</a>
+      <a href="../index.html#contact"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Contact</a>
+	  <a href="Portofolio.html"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Portofolio</a>
+    </nav>
+  </div>
+</header>
+<!--End Navbar -->
+<!-- Blog -->
+<section class="bg-white dark:bg-gray-900 mt-14">
+  <div class="container px-6 py-10 mx-auto">
+      <div class="text-center">
+          <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Welcome To My Blog</h1>
+
+          <p class="max-w-lg mx-auto mt-4 text-gray-500">
+            Sebuah Blog yang ditulis oleh saya sendiri
+          </p>
+      </div>
+<!-- Open blog 1 -->
+<div class="mt-5">
+    <div>
+        <div class="mt-5 mb-5">
+            <div  class=" mb-5 pb-14 font-semibold text-5xl text-center text-gray-800">
+                STACK
+            </div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/4.png" alt="">
+            <div class="mt-3  ">
+            <h5 class="text-4xl font-semibold">STACK</h5> <br><br>
+            •	Penyimpanan dan pengambilan data yang sangat efektif apabila data yang terakhir masuk adalah data yang akan diambil pertama kali. <br>
+            •	Tumpukan memungkinkan akses ke satu item data saja, yaitu item terakhir yang disisipkan. <br>
+            •	Bila kita menghilangkan item ini maka kita bisa mengakses ke sebelah item terakhir yang disisipkan, dan seterusnya.<br><br>
+            SEJARAH<br>
+            •	Tumpukan pertama kali diusulkan pada tahun 1955, dan kemudian dipatenkan pada tahun 1957, oleh Friedrich L. Bauer Jerman. <br>
+            •	Konsep yang sama dikembangkan secara independen, pada sekitar waktu yang sama, oleh Leonard Charles Australia Hamblin.  <br><br>
+            PENGERTIAN<br>
+            •	Merupakan tumpukan data yang seolah-olah diletakkan di atas data yang lain. <br>
+            •	Kita dapat menambahkan (menyisipkan) data dan mengambil (menghapus) data melalui ujung yang sama, yang disebut sebagai ujung atas stack (top of stack).<br>
+            •	Stack bersifat LIFO (Last In First Out). <br>
+            •	Benda yang terakhir masuk ke dalam stack akan menjadi yang pertama keluar dari stack.<br><br>
+            misalnya: <br>
+            Terdapat stack S=(a1, a2, a3, …, an)  <br>
+            1.	Elemen mana yang merupakan elemen terbawah. <br>
+            2.	Elemen mana yang merupakan elemen paling atas. <br>
+            3.	Elemen mana yang akan dikeluarkan. <br>
+            4.	Elemen mana yang paling akhir dikeluarkan.<br><br>
+            KARAKTERISTIK STACK<br>
+            •	Elemen stack yaitu item-item data di elemen stack. <br>
+            •	Top (elemen puncak dari stack) <br>
+            •	Jumlah   elemen pada stack. <br>
+            •	Status / kondisi stack.<br><br>
+            KONDISI STACK<br>
+            Kondisi stack yang perlu diperhatikan adalah : <br>
+            1.	Penuh: bila elemen stack mencapai kapasitas maksimum. Pada kondisi ini tidak mungkin dilakukan penambahan ke stack. Penambahan elemen menyebabkan kondisi kesalahan overflow.<br>
+            2.	Kosong: bila tidak ada elemen di stack. Pada kondisi ini, tidak mungkin dilakukan pengambilan elemen dari stack. Pengambilan elemen menyebabkan kondisi kesalahan underflow.<br><br>
+            STACK REPRESENTASI STATIS<br>
+            •	Biasanya diimplementasikan dengan menggunakan array. <br>
+            •	Karena itu, stack dengan representasi statis dapat mengalami kondisi elemen penuh.<br><br>
+            STACK REPRESENTASI DINAMIS<br>
+            •	Biasanya diimplementasikan dengan menggunakan pointer yang menunjuk pada elemen-elemen yang dialokasikan pada memori. <br>
+            •	Elemen ditambahkan akan menggunakan penambahan elemen pada awal stack (addfirst). <br>
+            •	Saat pengambilan atau penghapusan elemen menggunakan penghapusan di awal stack (delfirst).<br><br>
+            OPERATOR-OPERATOR DI DALAM STACK<br><br>
+            OPERASI PUSH<br>
+            Adalah operasi menambahkan elemen baru pada sebuah stack. Aturan penambahan stack: Sebagai kondisi awal ada sebuah stack yang telah memiliki beberapa elemen dengan elemen paling atas sebagai top. Dibuat sebuah elemen baru yang akan dimasukkan ke dalam stack.<br>
+            •	Elemen baru dimasukkan ke dalam stack. <br>
+            •	Penunjuk top pada stack diubah menunjuk ke elemen yang baru saja ditambahkan.<br><br>
+            
+            
+            OPERASI POP<br>
+            Adalah operasi mengambil sebuah elemen dari sebuah stack. Aturan mengambil sebuah elemen dari sebuah stack adalah sebagai berikut : <br>
+            •	Sebagai kondisi awal ada sebuah stack yang telah memiliki beberapa elemen dengan elemen paling atas sebagai top. <br>
+            •	Penunjuk top diubah menjadi menunjuk elemen di bawah elemen atas. <br>
+            •	Elemen atas diambil dari stack.<br><br>
+            CREATE<br>
+            Operator ini berfungsi untuk membuat sebuah stack kosong.<br><br>
+            ISEMPTY<br>
+            Operator ini berfungsi untuk menentukan apakah suatu stack adalah stack kosong. Operasinya akan bernilai boolean, dengan definisi sebagai berikut :  <br>
+            ISEMPTY(S) = true, jika S adalah stack kosong = false, jika S bukan stack kosong  atau  ISEMPTY(S) = true, jika (S) = NULL = false, jika (S) = 1   <br>
+            Catatan : ISEMPTY(CREATE(S)) = true.  <br><br>
+            ISFULL<br>
+            Operator ini berfungsi untuk menentukan apakah suatu stack adalah stack penuh. Operasinya akan bernilai boolean, dengan definisi sebagai berikut :  <br>
+            ISFULL(S) = true, jika S adalah stack penuh = false, jika S bukan stack penuh    <br>
+            Catatan : ISEMPTY(CREATE(S)) = true.  <br><br>
+            PENGGUNAAN STACK<br>
+            •	Dalam dunia komputer, penggunaan stack (tumpukan) merupakan suatu hal yang umum digunakan seperti untuk penentuan alamat memory, penempatan ruang data dan aplikasi lain.  <br>
+            •	Aplikasi stack juga digunakan untuk berbagai macam keperluan seperti pengujian kalimat palindrome, penguji tanda kurung (matching parentheses), dan juga berfungsi sebagai konversi dari notasi infix menjadi notasi postfix.  <br>
+            •	Sebuah kompilator mempunyai tugas, salah satu di antaranya adalah menyelidiki apakah Pemrogram telah dengan cermat mengikuti aturan tata bahasa, atau sintaks dari bahasa pemrograman yang bersangkutan.  <br>
+            •	Misalnya untuk parantheses kiri (tanda kurung buka) yang diberikan, harus dipastikan adanya  parantheses kanan (tanda kurung tutup) yang bersangkutan.<br><br>
+            MATCHING PARENTHESES<br>
+            Proses ini dilakukan compiler untuk memeriksa kelengkapan tanda kurung yang terdapat pada suatu ekspresi aritmetik. Sedangkan stack di sini digunakan sebagai tempat prosesnya.  Algoritma yang digunakan adalah :  <br>
+            1.	Elemen-elemen suatu ekspresi aritmetik (string) di-Scan dari kiri ke kanan. <br>
+            2.	Jika ditemukan simbol "(" atau "Left parenthesis", maka simbol tersebut di-push ke dalam stack.<br>
+            3.	Jika ditemukan simbol ")" atau "Right parenthesis", maka isi stack diperiksa. <br>
+            •	Jika stack kosong terjadi kesalahan. berarti : ada simbol "(", tetapi tidak ada simbol ")" yang seharusnya mendahului. <br>
+            •	Jika stack tidak kosong artinya ada pasangannya dan langsung di-POP keluar stack.  <br><br>
+            INTERPRETER POSTFIX<br>
+            •	Contoh lain penggunaan stack adalah pemeriksaan dan eksekusi ekpresi postfix.  <br>
+            •	Ekspresi postfix merupakan ekpresi dengan aturan L R B dengan L adalah operand kiri, R operand kanan dan B adalah operatornya.  <br>
+            •	Ekspresi yang kita biasa gunakan sehari-hari adalah ekspresi infix dengan aturan L B R. Contoh, jika ekspresi infixnya "6*7-2" maka ekspresi postfixnya adalah "6 7 * 2 -".<br><br>
+            NOTASI INFIX DAN POSTFIX<br>
+            •	Suatu perhitungan aritmatika biasanya berhubungan dengan operand dan operator. Operand merupakan suatu karakter atau elemen yang nilainya dioperasikan dengan bantuan suatu operator untuk menghasilkan suatu solusi.<br>
+            •	Misalkan jika diberikan suatu ekspresi aritmatika 2 * 3, maka elemen ‘dua’ dan elemen ‘tiga’ merupakan operand dari ekspresi tersebut dan elemen ‘*’ merupakan operator perkalian atas dua operand yang menghasilkan suatu solusi.<br>
+            •	Dalam penggunaannya, dalam kehidupan sehari-hari notasi infix merupakan notasi aritmatika yang paling banyak digunakan untuk mengekspresikan suatu perhitungan artimatik dibanding dengan dua notasi yang lain.  <br>
+            •	Akan tetapi notasi Postfix merupakan notasi yang digunakan oleh mesin kompilasi pada komputer dengan maksud untuk mempermudah proses pengkodean, sehingga mesin kompilasi membutuhkan stack untuk proses translasi ekspresi tersebut.<br><br>
+            NOTASI POSTFIX<br>
+            Bentuk aplikasi stack yang lain adalah mengubah suatu ekspresi aritmatik (string) ke dalam notasi postfix. Notasi postfix ini digunakan oleh compiler untuk menyatakan suatu ekspresi aritmatik dalam bahasa tingkat tinggi (high level language). Stack digunakan oleh compiler untuk mentransformasikan ekspresi aritmatik menjadi suatu ekspresi dalam bentuk/notasi postfix.<br>
+            Contoh : <br>
+            Misal diberikan ekspresi aritmatik : A + B ; Maka bentuknya dalam notasi postfix menjadi : AB+  <br>
+            Urutan (prioritas) dari operator adalah : <br>
+            •	Perpangkatan (^) <br>
+            •	Perkalian (*) atau Pembagian (/) <br>
+            •	Penjumlahan (+) atau Pengurangan (-)<br>
+            <div class="mt-5">
+                <table class="w-2/5 text-sm text-left text-black">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="py-3 px-6">OPERATOR</th>
+                        <th scope="col" class="py-3 px-6">ARTI</th>
+                        <th scope="col" class="py-3 px-6">PRIORITAS</th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="bg-white border-b ">
+                        <td class="py-4 px-6">^</td>
+                        <td class="py-4 px-6">PANGKAT</td>
+                        <td class="py-4 px-6">1</td>
+                    </tr>
+                    <tr class="bg-white border-b ">
+                        <td class="py-4 px-6">*  /</td>
+                        <td class="py-4 px-6">KALI  BAGI</td>
+                        <td class="py-4 px-6">2</td>
+                    </tr>
+                    <tr class="bg-white border-b ">
+                        <td class="py-4 px-6">+  -</td>
+                        <td class="py-4 px-6">TAMBAH KURANG</td>
+                        <td class="py-4 px-6">3</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div> <br><br>
+            ATURAN DALAM PROSES TRANSFORMASI KE POSTFIX <br>
+•	Ekspresi aritmatik yang diberikan di- "Scan" dari kiri ke kanan.<br>
+•	Bila simbol yang di-scan adalah "(", maka simbol tersebut di push ke dalam stack.<br>
+•	Bila simbol yang di-scan adalah ")", maka seluruh isi stack di pop keluar mulai dari simbol "()" yang pertama ditemukan dalam stack. <br>
+•	Bila simbol adalah operator, maka dilakukan perbandingan dulu dengan simbol (operator) yang berada pada posisi top dalam stack:Jika derajatnya setara atau lebih rendah dari simbol yang berada pada posisi top, maka top stack di-pop keluar sebagai output dan simbol yang baru di-push ke dalam stack.<br>
+•	Jika derajatnya lebih tinggi dari simbol yang berada pada posisi top, maka simbol (operator) yang di-scan tersebut di-push ke dalam stack. <br>
+•	Bila simbol yang di-scan adalah operand, maka simbol tersebut langsung sebagai output. Bila simbol adalah ";" maka seluruh isi stack di-pop sebagai output. Jika derajatnya lebih tinggi dari simbol yang berada pada posisi top, maka simbol (operator) yang di-scan tersebut di-push ke dalam stack. <br>
+•	Bila simbol yang di-scan adalah operand, maka simbol tersebut langsung sebagai output. Bila simbol adalah ";" maka seluruh isi stack di-pop sebagai output.<br><br>
+CONTOH :<br>
+3 + 2 * 5 = 325*+ (A + B) * (C – D) / E; = AB+*CD-E/<br>
+<img src="/Public/stack1.JPG" alt=""> <br><br>
+Inisialisasi <br>
+void inisialisasi () <br>
+{    <br>
+tumpuk.top = -1 <br>
+}<br><br>
+
+
+•	Pada mulanya isi top dengan -1, karena array dalam C/C++ dimulai dari 0, berarti stack adalah KOSONG  <br>
+•	TOP adalah variabel penanda dalam STACK yang menunjukkan elemen teratas Stack.   <br>
+•	TOP of STACK akan selalu bergerak hingga mencapai MAX of STACK sehingga menyebabkan stack PENUH<br><br>
+Fungsi IsEmpty<br>
+
+int IsEmpty () <br>
+{    <br>
+if tumpuk.top == -1  <br>
+return 1;    <br>
+else  <br>
+return 0;  <br>
+}<br><br>
+
+
+•	Digunakan untuk memeriksa apakah stack masih dalam kondisi kosong  <br>
+•	Dengan cara memeriksa TOP of STACK.   Jika TOP masih = -1 maka berarti stack masih kosong<br><br>
+Fungsi IsFull<br>
+•	Digunakan untuk memeriksa apakah kondisi stack sudah penuh   <br>
+•	Dengan cara memeriksa TOP of Stack.  Jika TOP of STACK = MAX_STACK-1 maka FULL (Penuh).  Jika TOP of STACK  MAX_STACK-1 maka belum penuh<br><br>
+Fungsi PUSH<br>
+Digunakan untuk memasukkan elemen ke dalam stack dan selalu menjadi elemen teratas stack Dengan cara  :  <br>
+1. Menambah satu (increment) nilai TOP of  STACK setiap ada penambahan elemen  stack selama stack masih belum penuh <br> 
+2.  Isikan nilai baru ke stack berdasarkan indeks TOP  of STACK setelah ditambah satu  (diincrement)<br><br>
+Fungsi POP<br>
+Digunakan untuk menghapus elemen yang berada pada posisi paling atas dari stack. Dengan cara :  <br>
+1. Ambil dahulu nilai elemen teratas stack  dengan mengakses TOP of STACK.   <br>
+2. Tampilkan nilai yang akan diambil.  <br>
+3. Lakukan decrement nilai TOP of STACK  sehingga jumlah elemen stack berkurang 1<br><br>
+Fungsi CLEAR<br>
+Digunakan untuk mengosongkan stack / membuat stack hampa sehingga Top pada Stack berada kembali di posisi Top = -1<br>
+void clear () <br>
+{     t<br>
+umpuk.data=tumpuk.top=-1     <br>
+printf(“Data clear”);   <br>
+ }<br>
+
+
+            <p class="mt-3 text-sm text-blue-500 pb-10">Penulis Muhamad Dzikrulloh</p>
+        </div>
+    </div>
+
+<!-- Artikel  1-->
+          <div class="">
+              <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/1.png" alt="">
+
+              <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                  <a href="5.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                    Queue (Antrian) 
+                  </a>
+
+                  <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                    1. Queue (antrian) adalah struktur data dimana proses pengambilan dan penambahan element dilakukan pada ujung yang berbeda.
+2. Queue mengikuti konsep FIFO. 
+                  </p>
+
+                  <a href="5.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+              </div>
+          </div>
+      </div>
+  </div>
+<!-- Artikel  2-->
+<div class="container px-6 py-10 mx-auto">
+<div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+  <div>
+      <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/6.png" alt="">
+
+      <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+          <a href="6..html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+            LINK LIST 
+          </a>
+
+          <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+            Dikembangkan tahun 1955-1956 oleh Allen Newell, Cliff Shaw dan Herbert Simon di RAND Corporation sebagai struktur data utama untuk bahasa Information Processing Language (IPL). 
+          </p>
+
+          <a href="6..html" class="mt-3 text-sm text-blue-500">Read More..</a>
+      </div>
+  </div>
+
+  <div>
+      <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/1.png" alt="">
+
+      <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+          <a href="1.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+            Pengenalan Stuktur Data Dan Algoritma 
+          </a>
+
+          <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+            Struktur data adalah pengaturan data di dalam memori komputer. dengan cara menyimpan, mengambil, dan menyusun data. Struktur data memungkinkan data yang ada di komputer lebih mudah diakses dan diperbarui. 
+          </p>
+
+          <a href="1.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+      </div>
+  </div>
+</div>
+</div>
+<!-- Artikel  3-->
+<div class="container px-6 py-10 mx-auto">
+  <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+    <div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/2.png" alt="">
+  
+        <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="2.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                Tipe Data 
+            </a>
+  
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                Adalah tipe data yang hanya bernilai benar (true) atau salah (false). Jangkauan (nilai yang mungkin) hanya 2 yaitu true atau false.
+ADT (Abstract Data Type) atau Tipe Data Bentukan 
+            </p>
+  
+            <a href="2.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+        </div>
+    </div>
+  
+    <div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/3.png" alt="">
+  
+        <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="3.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                ARRAY DIMENSI 1 & 2 
+            </a>
+  
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                • Array dapat didefinisikan sebagai suatu himpunan hingga elemen yang terurut dan homogen. Terurut : Dapat diartikan bahwa elemen tersebut dapat diidentifikasi sebagai elemen pertama, elemen kedua dan seterusnya sampai elemen ke-n. 
+            </p>
+  
+            <a href="3.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End Blog -->
+<!-- Footers -->
+<footer class="bg-[#4F927B] text-white mt-16">
+    <div class="flex">
+<div class="w-60 h-20 flex items-center justify-center">
+    <span class="ml-3 text-4xl text-white" style="font-family: Stick;">Dz</span>
+</div>
+<div class=" w-full flex items-center justify-center mr-28 text-center">@2023 Muhamad Dzikrulloh copy right</div>
+</div>
+
+</footer>
+
+
+</body>
+</html>

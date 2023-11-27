@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Website Muhamad Dzikrulloh</title>
+  <link rel="shortcut icon" href="/Public/LOGO.png">
+</head>
+<body style="font-family: Montserrat;">
+
+  <!-- Navbar -->
+<header class="bg-white  body-font shadow-md fixed w-full z-50" style="top: 0px;">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="color:white;">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <span class="ml-3 text-4xl" style="font-family: Stick;">Dz</span>
+    </a>
+    <nav class="md:ml-auto gap-3 flex flex-wrap items-center text-base justify-center text-black">
+      <a href="../index.html"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Home</a>
+      <a href="index.html"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Blog</a>
+      <a href="../index.html#about" target="_blank"class="mr-5 hover:text-gray-900 hover:underline">About</a>
+      <a href="../index.html#contact" target="_blank"class="mr-5 hover:text-gray-900 hover:underline">Contact</a>
+	  <a href="Portofolio.html" target="_blank"class="mr-5 hover:text-gray-900 hover:underline">Portofolio</a>
+    </nav>
+  </div>
+</header>
+<!--End Navbar -->
+<!-- Blog -->
+<section class="bg-white dark:bg-gray-900 mt-14">
+  <div class="container px-6 py-10 mx-auto">
+      <div class="text-center">
+          <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Welcome To My Blog</h1>
+
+          <p class="max-w-lg mx-auto mt-4 text-gray-500">
+            Sebuah Blog yang ditulis oleh saya sendiri
+          </p>
+      </div>
+<!-- Open blog 1 -->
+<div class="mt-5">
+    <div>
+        <div class="mt-5 mb-5">
+            <div  class=" mb-5 pb-14 font-semibold text-5xl text-center text-gray-800">
+                Link List
+            </div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/6.png" alt="">
+            <div class="mt-3  ">
+            <h5 class="text-4xl font-semibold">Link List</h5> <br><br>
+            SEJARAH <br>
+            Dikembangkan tahun 1955-1956 oleh Allen Newell, Cliff Shaw dan Herbert Simon di RAND Corporation sebagai struktur data utama untuk bahasa Information Processing Language (IPL). IPL dibuat untuk mengembangkan program artificial intelligence<br><br>
+            PENGENALAN<br>
+            List merupakan sebuah pemikiran/konsep struktur data yang sangat dasar pada pemrograman agar lebih fleksibel.  Setiap elemen akan ditambahkan saat dibutuhkan, tidak dialokasikan dengan tempat tertentu dari awal.<br><br>
+            
+            PENGERTIAN<br>
+            •	Merupakan sekumpulan elemen list yang bertipe sama. Elemen list mempunyai keterurutan tertentu, nilai satu elemen boleh muncul lebih dari satu kali.  <br>
+            •	Setiap elemen mempunyai 2 bagian: <br>
+            1.	Informasi elemen <br>
+            2.	Alamat suksesornya<br>
+            •	Linked List adalah salah satu bentuk struktur data, berisi kumpulan data (node) yang tersusun secara sekuensial, saling sambung-menyambung dan dinamis. <br>
+            •	Linked List saling terhubung dengan bantuan variabel pointer. <br>
+            •	Masing-masing data dalam Linked List disebut dengan node (simpul) yang menempati alokasi memori secara dinamis.<br>
+            •	Setiap node terdiri atas dua bagian. Bagian pertama berisi informasi data tersebut,  Bagian kedua merupakan  field,  link, atau  nextpointer. <br>
+            •	Link inilah yang menghubungkan satu elemen data ke elemen data lainnya, sehingga urutan elemen data tersebut membentuk suatu  linear list.  <br>
+            •	Field link ini berisi alamat dari simpul berikutnya dalam  list.  <br>
+            •	Field link bernilai 0 bila  link tersebut tidak menuding ke data (simpul) lainnya.  <br>
+            •	Penuding  ini  disebut  penuding nol.  <br><br>
+            CONTOH<br>
+            Misalnya kita ingin membuat sebuah elemen data nilai mahasiswa yang terdiri dari NRP, nama, dan nilai, maka representasinya.<br>
+            Bila elemen seperti diatas dibuat dalam bahasa algoritma, seperti berikut:  <br>
+            type nilaiMatKul : <      <br>
+            NRP : string,      <br>
+            nama : string,      <br>
+            nilai : string,  <br>
+            > <br><br>
+            Elemen ditambah dengan pengait/penunjuk: <br> 
+            type elemen : <      <br>
+            elmt : nilaiMatKul,      <br>
+            next : elemen  <br>
+            ><br><br>
+            Deklarasi listnya sebagai berikut:  <br>
+            type list : <      <br>
+            first : elemen  <br>
+            ><br><br>
+            •	Penunjuk elemen di awal ini (first) digunakan untuk memegang elemen awal sebuah list agar dapat diakses satu per satu sampai elemen terakhir list. <br>
+            •	Sebuah struktur data yang dianggap sebagai list memiliki aturan pengaksesan. <br>
+            •	Pengaksesan dilakukan dari penunjuk elemen pertama (first) kemudian berjalan maju ke elemen kedua, ketiga dan seterusnya sampai elemen terakhir.<br><br><br>
+            
+<img class="w-2/4" src="/Public/link list 1.png" alt=""><br><br>
+KONSEP POINTER  DAN LINKED LIST <br>
+•	Untuk mengolah data yang banyaknya tidak bisa ditentukan sebelumnya, maka disediakan satu fasilitas yang memungkinan untuk menggunakan suatu peubah yang disebut dengan peubah dinamis (Dinamic variable).<br>
+•	Peubah Dinamis (Dinamic variable)  Suatu peubah yang akan  dialokasikan hanya pada saat diperlukan, yaitu setelah program dieksekusi.      <br>
+•	Perbedaan Perubah Statis & Dinamis Pada perubah statis, isi Memory pada lokasi tertentu (nilai perubah) adalah data sesungguhnya yang akan diolah. Pada perubah dinamis, nilai perubah adalah alamat lokasi lain yang menyimpan data sesungguhnya. Dengan demikian data yang sesungguhnya dapat dimasukkan secara langsung.<br><br>
+DEKLARASI POINTER   <br>
+Pointer digunakan sebagai penunjuk ke suatu alamat memori Dalam pemrograman C++, Type Data Pointer dideklarasikan dengan bentuk umum :<br>
+Type Data * Nama Variabel;<br>
+Type Data dapat berupa sembarang type data, misalnya char, int atau float. Sedangkan Nama veriabel merupakan nama variabel pointer<br><br>
+KEUNTUNGAN LIST<br>
+•	Penggunaan memori yang dinamik. <br>
+•	Kita dapat mengatur penggunaan memori sehingga bisa lebih hemat. <br>
+•	Kesederhaan pada proses insert dan delete elemen.<br>
+•	Alamat elemen pertama dari suatu list, dapat diacu oleh First(L).<br> 
+•	Nilai yang dibawanya dapat diacu dengan info(P)<br><br>
+
+PENGERTIAN<br>
+•	Single : artinya field pointer-nya hanya satu buah saja dan satu arah serta pada akhir node, pointernya menunjuk NULL<br>
+•	Linked List : artinya node-node tersebut saling terhubung satu sama lain. <br>
+•	Setiap node pada linked list mempunyai field yang berisi pointer ke node berikutnya, dan juga memiliki field yang berisi data. <br><br><br>
+ <img class="w-2/4" src="/Public/link list 2.png" alt=""><br><br>
+ Node terakhir akan menunjuk ke NULL yang akan digunakan sebagai kondisi berhenti pada saat pembacaan isi linked list. <br><br>
+ <img class="w-2/4" src="/Public/link list 3.png" alt=""><br><br><br>
+ •	Kelebihan dari Single Linked List dengan Head & Tail adalah pada penambahan data di belakang, hanya dibutuhkan tail yang mengikat node baru saja tanpa harus menggunakan perulangan pointer bantu.  <br><br>
+MEMBUAT ELEMEN LINKED LIST<br>
+Membuat suatu elemen linked list berarti memesan tempat di memori untuk menyimpan sebuah list.<br>
+MENGHAPUS ELEMEN LIST<br>
+•	Menghapus elemen list berarti menghilangkan atau menghancurkan alokasi memori sebuah list yang telah ada di memori.  <br>
+•	Fungsi: agar data yang tidak diperlukan benar-benar terhapus di memori  sehingga penggunaan memori dapat optimal karena data-data yang tidak diperlukan dihilangkan.
+
+PENAMBAHAN ELEMEN DI POSISI AWAL
+•	Penambahan elemen di posisi awal adalah menambahkan data baru pada posisi awal, sehingga data baru  tersebut akan menjadi awal.  <br>
+•	Ada 2 hal yang harus diperhatikan, yaitu :  <br>
+1.	kondisi linked list sedang kosong, atau  <br>
+2.	kondisi linked list sudah mempunyai elemen<br><br>
+Kondisi Linked List Sedang Kosong<br>
+Ketika linked list masih kosong, maka variable awal dan akhir akan diisi dengan variable baru.<br>
+Kondisi Linked List Sudah Mempunyai Elemen.<br>
+Proses penambahannya adalah dengan mengisikan field next  milik elemen baru dengan posisi awal linked list, kemudian posisi awal berubah ke posisi baru.<br>
+Penambahan Elemen Di Posisi Terakhir<br><br>
+•	Penambahan di posisi akhir adalah proses penambahan data baru dimana data baru disimpan di posisi terakhir. <br> 
+•	Setelah proses penambahan selesai, maka variable akhir akan menunjuk ke data  baru tersebut.  <br>
+•	Ada 2 hal yang harus diperhatikan yaitu :  <br>
+1.	Kondisi penambahan akhir pada linked list yang masih kosong dan  <br>
+2.	Kondisi penambahan akhir pada linked list yang sudah mempunyai elemen.<br><br>
+MENAMPILKAN  SINGLE LINKED LIST DENGAN HEAD<br>
+•	Penelusuran ini dilakukan dengan menggunakan suatu pointer bantu, karena pada prinsipnya pointer head yang menjadi tanda awal list tidak boleh berubah/berganti posisi. <br>
+•	Penelusuran dilakukan terus sampai node terakhir ditemukan menunjuk ke nilai NULL.  Jika tidak NULL, maka node bantu akan berpindah ke node selanjutnya dan membaca isi datanya dengan menggunakan field next sehingga dapat saling berkait. <br>
+•	Jika head masih NULL berarti data masih kosong.<br><br>
+contoh: <br>
+Langkah-langkah penelusuran adalah :    <br>
+•	Isi variable p dengan awal.    <br>
+•	Selama p tidak NULL, maka tampilkan info yang ada di elemen yang ditunjuk variable p, kemudian p dipindahkan ke elemen berikutnya.<br><br>
+PENGHAPUSAN DATA AWAL<br>
+•	Penghapusan data di awal adalah proses menghapus elemen pertama (awal), sehingga variable awal akan berpindah ke elemen data berikutnya.  <br>
+•	Ada 3 kondisi yang perlu diperhatikan yaitu:  <br>
+1.	kondisi linked list masih kosong  <br>
+2.	kondisi linked list hanya memiliki 1 data, dan  <br>
+3.	kondisi linked  list yang memiliki data lebih dari 1 elemen.<br>
+•	Kondisi linked list masih kosong Pada kondisi ini proses penghapusan tidak bisa dilakukan. <br>
+•	Kondisi linked list hanya memiliki 1 data Langkah yang dilakukan adalah menghapus data yang ada di posisi awal kemudian akhir dan awal di-NULL-kan.<br>
+•	Kondisi linked list masih kosong Pada kondisi ini proses penghapusan tidak bisa dilakukan. <br>
+•	Kondisi linked list hanya memiliki 1 data Langkah yang dilakukan adalah menghapus data yang ada di posisi awal kemudian akhir dan awal di-NULL-kan.<br>
+•	Penghapusan node tidak boleh dilakukan jika keadaan node sedang ditunjuk oleh pointer. <br>
+•	Sebelum data terdepan dihapus, head harus ditunjukkan ke node sesudahnya terlebih dahulu agar list tidak putus, sehingga node setelah head lama akan menjadi head baru (data terdepan yang baru).<br><br>
+PENGHAPUSAN DATA AKHIR<br>
+•	Penghapusan data akhir adalah proses menghilangkan/menghapus data yang ada di posisi terakhir. <br> 
+•	Ada 3 kondisi yang harus diperhatikan ketika akan melakukan proses penghapusan data akhir yaitu: <br>
+1.	Kondisi linked list masih kosong,  <br>
+2.	Kondisi linked list hanya berisi 1 data, dan  <br>
+3.	Kondisi linked list berisi data lebih dari 1 buah.<br><br>
+MENGHAPUS DATA DARI BELAKANG<br>
+•	Membutuhkan pointer bantu dan hapus.<br>
+•	Pointer hapus digunakan untuk menunjuk node yang akan dihapus, dan pointer bantu digunakan untuk menunjuk node sebelum node yang dihapus yang kemudian selanjutnya akan menjadi node terakhir.<br>
+•	Pointer bantu akan digunakan untuk menunjuk ke nilai NULL.Pointer bantu akan selalu bergerak sampai sebelum node yang akan dihapus, baru kemudian pointer hapus diletakkan setelah pointer bantu.  <br>
+•	Setelah itu pointer hapus akan dihapus, pointer bantu akan menunjuk ke NULL.<br>
+•	Dibutuhkan dua buah variabel pointer: head dan tail Head akan selalu menunjuk pada node pertama, sedangkan tail akan selalu menunjuk pada node terakhir.<br><br>
+
+            <p class="mt-3 text-sm text-blue-500 pb-10">Penulis Muhamad Dzikrulloh</p>
+        </div>
+    </div>
+
+<!-- Artikel  1-->
+          <div class="">
+              <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/1.png" alt="">
+
+              <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                  <a href="1.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                    Pengenalan Stuktur Data Dan Algoritma 
+                  </a>
+
+                  <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                    Struktur data adalah pengaturan data di dalam memori komputer. dengan cara menyimpan, mengambil, dan menyusun data. Struktur data memungkinkan data yang ada di komputer lebih mudah diakses dan diperbarui.
+                  </p>
+
+                  <a href="1.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+              </div>
+          </div>
+      </div>
+  </div>
+<!-- Artikel  2-->
+<div class="container px-6 py-10 mx-auto">
+<div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+  <div>
+      <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/2.png" alt="">
+
+      <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+          <a href="2.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+            Tipe Data 
+          </a>
+
+          <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+            Adalah tipe data yang hanya bernilai benar (true) atau salah (false). Jangkauan (nilai yang mungkin) hanya 2 yaitu true atau false.
+            ADT (Abstract Data Type) atau Tipe Data Bentukan 
+          </p>
+
+          <a href="2.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+      </div>
+  </div>
+
+  <div>
+      <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/3.png" alt="">
+
+      <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+          <a href="3.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+            ARRAY DIMENSI 1 & 2 
+          </a>
+
+          <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+            • Array dapat didefinisikan sebagai suatu himpunan hingga elemen yang terurut dan homogen. Terurut : Dapat diartikan bahwa elemen tersebut dapat diidentifikasi sebagai elemen pertama, elemen kedua dan seterusnya sampai elemen ke-n. 
+          </p>
+
+          <a href="3.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+      </div>
+  </div>
+</div>
+</div>
+<!-- Artikel  3-->
+<div class="container px-6 py-10 mx-auto">
+  <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+    <div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/4.png" alt="">
+  
+        <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="4.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                STACK 
+            </a>
+  
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                • Penyimpanan dan pengambilan data yang sangat efektif apabila data yang terakhir masuk adalah data yang akan diambil pertama kali.
+                • Tumpukan memungkinkan akses ke satu item data saja, yaitu item terakhir yang disisipkan. 
+            </p>
+  
+            <a href="4.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+        </div>
+    </div>
+  
+    <div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/5.png" alt="">
+  
+        <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="5.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                Queue (Antrian) 
+            </a>
+  
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                1. Queue (antrian) adalah struktur data dimana proses pengambilan dan penambahan element dilakukan pada ujung yang berbeda.
+                2. Queue mengikuti konsep FIFO.
+              
+            </p>
+  
+            <a href="5.html" class="mt-3 text-sm text-blue-500">  Read More..</a>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End Blog -->
+<!-- Footers -->
+<footer class="bg-[#4F927B] text-white mt-16">
+    <div class="flex">
+<div class="w-60 h-20 flex items-center justify-center">
+    <span class="ml-3 text-4xl text-white" style="font-family: Stick;">Dz</span>
+</div>
+<div class=" w-full flex items-center justify-center mr-28 text-center">@2023 Muhamad Dzikrulloh copy right</div>
+</div>
+
+</footer>
+
+</body>
+</html>
