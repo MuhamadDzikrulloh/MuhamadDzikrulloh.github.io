@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <style>
+  /* Style untuk mengatur tampilan dropdown */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+<button class="px-4 py-2 bg-gray-800 text-white rounded" id="dropdownButton">
+  Dropdown
+</button>
+<div class="dropdown-menu" id="dropdownMenu">
+  <!-- Isi Dropdown -->
+  <a href="#" class="block">Item 1</a>
+  <a href="#" class="block">Item 2</a>
+  <a href="#" class="block">Item 3</a>
+</div>
+</div>
+
+<script>
+// Mengambil elemen tombol dan dropdown
+var button = document.getElementById('dropdownButton');
+var menu = document.getElementById('dropdownMenu');
+
+// Menambahkan event listener untuk menanggapi klik pada tombol
+button.addEventListener('click', function() {
+  // Mengubah tampilan dropdown
+  menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+});
+
+// Menutup dropdown jika di-klik di luar dropdown
+document.addEventListener('click', function(event) {
+  var isClickInside = button.contains(event.target) || menu.contains(event.target);
+  if (!isClickInside) {
+    menu.style.display = 'none';
+  }
+});
+</script>
+</body>
+</html>

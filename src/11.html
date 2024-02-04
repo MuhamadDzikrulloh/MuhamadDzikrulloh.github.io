@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Website Muhamad Dzikrulloh</title>
+  <link rel="shortcut icon" href="/Public/LOGO.png">
+</head>
+<body style="font-family: Montserrat;">
+
+  <!-- Navbar -->
+<header class="bg-white  body-font shadow-md fixed w-full z-50" style="top: 0px;">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="color:white;">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <span class="ml-3 text-4xl" style="font-family: Stick;">Dz</span>
+    </a>
+    <nav class="md:ml-auto gap-3 flex flex-wrap items-center text-base justify-center text-black">
+      <a href="../index.html"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Home</a>
+      <a href="index.html"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Blog</a>
+      <a href="../index.html#about" target="_blank"class="mr-5 hover:text-gray-900 hover:underline">About</a>
+      <a href="../index.html#contact" target="_blank"class="mr-5 hover:text-gray-900 hover:underline">Contact</a>
+	  <a href="Portofolio.html" target="_blank"class="mr-5 hover:text-gray-900 hover:underline">Portofolio</a>
+    </nav>
+  </div>
+</header>
+<!--End Navbar -->
+<!-- Blog -->
+<section class="bg-white dark:bg-gray-900 mt-14">
+  <div class="container px-6 py-10 mx-auto">
+      <div class="text-center">
+          <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Welcome To My Blog</h1>
+
+          <p class="max-w-lg mx-auto mt-4 text-gray-500">
+            Sebuah Blog yang ditulis oleh saya sendiri
+          </p>
+      </div>
+<!-- Open blog 1 -->
+<div class="mt-5">
+    <div>
+        <div class="mt-5 mb-5">
+            <div  class=" mb-5 pb-14 font-semibold text-5xl text-center text-gray-800">
+               Pointer
+            </div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/Stuktur data/Pointer.png" alt="">
+            <div class="mt-3  ">
+            <h5 class="text-4xl font-semibold">Pointer</h5> <br><br>
+            Pengertian Pointer<br>
+
+            Pointer adalah variabel yang menyimpan alamat memori dari sebuah variabel lain. Ibarat peta harta karun, pointer menunjukkan lokasi data di "lautan memori" komputer. Dengan pointer, kita bisa mengakses data secara langsung, membuka gerbang ke berbagai kemungkinan dalam pemrograman.<br><br>
+            Cara Kerja Pointer<br>
+            
+            Ketika kita membuat variabel, memori komputer mengalokasikan ruang untuk menyimpan datanya. Alamat memori ini kemudian disimpan dalam pointer, seperti kunci yang membuka peti harta karun data.<br>
+            
+            Visualisasi:<br><br>
+            
+            Bayangkan sebuah variabel bernama x yang menyimpan nilai 10. Memori komputer mengalokasikan ruang di alamat 0x1234 untuk menyimpan nilai ini. Pointer p kemudian menyimpan alamat 0x1234, memungkinkan kita untuk mengakses nilai 10.<br>
+            C<br>
+            
+            int x = 10;<br>
+            int *p; // pointer to an integer<br>
+            
+            p = &x; // &x is the address of x<br>
+            
+            // dereferencing the pointer to access the value<br>
+            printf("%d", *p); // prints 10<br>
+            
+            Gunakan kode dengan hati-hati. Pelajari lebih lanjut<br><br>
+            Jenis-jenis Pointer<br>
+            
+            Pointer bagaikan pisau bermata dua, memiliki kekuatan dan bahayanya. Berikut jenis-jenisnya:<br>
+            
+                Pointer Null: Penunjuk tanpa alamat, seperti petunjuk arah ke pulau kosong.<br>
+                Pointer Dangling: Penunjuk ke alamat yang sudah dihapus, seperti peta harta karun yang mengarah ke kota yang hilang.<br>
+                Pointer Const: Penunjuk yang datanya tak tergoyahkan, seperti peta yang dilindungi kaca.<br>
+                Pointer Volatile: Penunjuk yang datanya berubah-ubah tanpa diprediksi, seperti peta cuaca yang selalu berubah.<br><br>
+            
+            Operasi pada Pointer<br>
+            
+            Pointer bukan hanya penunjuk, tapi juga alat untuk memanipulasi data. Berikut operasinya:<br><br>
+            
+                Aritmatika Pointer: Menambah, mengurangi, mengalikan pointer, seperti melipat peta untuk menemukan lokasi baru.<br>
+                Perbandingan Pointer: Mengecek apakah dua pointer menunjuk ke alamat yang sama, seperti membandingkan dua peta untuk menemukan kesamaan.<br>
+                Dereferensi Pointer: Mengambil nilai dari alamat yang ditunjuk pointer, seperti membuka peti harta karun dengan kuncinya.<br><br>
+            
+            Keuntungan dan Kerugian Pointer<br>
+            
+            Pointer bagaikan pedang bermata dua, memiliki manfaat dan risikonya.<br>
+            
+            Keuntungan:<br>
+            
+                Efisiensi: Akses data langsung di memori, mempercepat program seperti mobil di jalan tol.<br>
+                Fleksibilitas: Manipulasi data dengan cara yang lebih bebas, seperti seniman yang melukis di kanvas kosong.<br><br>
+            
+            Kerugian:<br>
+            
+                Kesulitan: Memahami dan mendebug program dengan pointer lebih rumit, seperti memecahkan kode rahasia.<br>
+                Kesalahan: Kesalahan pointer dapat menyebabkan program mogok, seperti kapal yang menabrak karang.<br>
+            
+            Contoh Penggunaan Pointer<br>
+            
+            Pointer bagaikan alat serbaguna, digunakan dalam berbagai situasi:<br>
+            
+                Struktur Data: Menghubungkan node dalam linked list dan tree, seperti membangun rel kereta api.<br>
+                Fungsi: Melewatkan data ke fungsi dengan cara yang lebih efisien, seperti mengirim pesan melalui kurir.<br>
+                Modifikasi Data: Mengubah data secara langsung di memori, seperti mengedit foto dengan software.<br><br>
+            
+            Kesimpulan<br>
+            
+            Pointer adalah alat yang powerful, membuka pintu ke berbagai kemungkinan dalam pemrograman. Namun, gunakan dengan hati-hati, karena pointer juga dapat menyebabkan masalah. Pahami cara kerjanya, jenis-jenisnya, dan operasi yang tersedia. Gunakan pointer untuk meningkatkan efisiensi dan fleksibilitas program Anda, dengan tetap menjaga keamanan dan keandalan.<br>
+
+          <p class="mt-3 text-sm text-blue-500 pb-10">Penulis Muhamad Dzikrulloh</p>
+        </div>
+    </div>
+
+<!-- Artikel  1-->
+          <div class="">
+              <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/1.png" alt="">
+
+              <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                  <a href="1.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                    Pengenalan Stuktur Data Dan Algoritma 
+                  </a>
+
+                  <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                    Struktur data adalah pengaturan data di dalam memori komputer. dengan cara menyimpan, mengambil, dan menyusun data. Struktur data memungkinkan data yang ada di komputer lebih mudah diakses dan diperbarui.
+                  </p>
+
+                  <a href="1.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+              </div>
+          </div>
+      </div>
+  </div>
+<!-- Artikel  2-->
+<div class="container px-6 py-10 mx-auto">
+<div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+  <div>
+      <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/2.png" alt="">
+
+      <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+          <a href="2.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+            Tipe Data 
+          </a>
+
+          <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+            Adalah tipe data yang hanya bernilai benar (true) atau salah (false). Jangkauan (nilai yang mungkin) hanya 2 yaitu true atau false.
+            ADT (Abstract Data Type) atau Tipe Data Bentukan 
+          </p>
+
+          <a href="2.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+      </div>
+  </div>
+
+  <div>
+      <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/3.png" alt="">
+
+      <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+          <a href="3.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+            ARRAY DIMENSI 1 & 2 
+          </a>
+
+          <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+            • Array dapat didefinisikan sebagai suatu himpunan hingga elemen yang terurut dan homogen. Terurut : Dapat diartikan bahwa elemen tersebut dapat diidentifikasi sebagai elemen pertama, elemen kedua dan seterusnya sampai elemen ke-n. 
+          </p>
+
+          <a href="3.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+      </div>
+  </div>
+</div>
+</div>
+<!-- Artikel  3-->
+<div class="container px-6 py-10 mx-auto">
+  <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+    <div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/4.png" alt="">
+  
+        <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="4.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                STACK 
+            </a>
+  
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                • Penyimpanan dan pengambilan data yang sangat efektif apabila data yang terakhir masuk adalah data yang akan diambil pertama kali.
+                • Tumpukan memungkinkan akses ke satu item data saja, yaitu item terakhir yang disisipkan. 
+            </p>
+  
+            <a href="4.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+        </div>
+    </div>
+  
+    <div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/5.png" alt="">
+  
+        <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="5.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                Queue (Antrian) 
+            </a>
+  
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                1. Queue (antrian) adalah struktur data dimana proses pengambilan dan penambahan element dilakukan pada ujung yang berbeda.
+                2. Queue mengikuti konsep FIFO.
+              
+            </p>
+  
+            <a href="5.html" class="mt-3 text-sm text-blue-500">  Read More..</a>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End Blog -->
+<!-- Footers -->
+<footer class="bg-[#4F927B] text-white mt-16">
+    <div class="flex">
+<div class="w-60 h-20 flex items-center justify-center">
+    <span class="ml-3 text-4xl text-white" style="font-family: Stick;">Dz</span>
+</div>
+<div class=" w-full flex items-center justify-center mr-28 text-center">@2023 Muhamad Dzikrulloh copy right</div>
+</div>
+
+</footer>
+
+</body>
+</html>

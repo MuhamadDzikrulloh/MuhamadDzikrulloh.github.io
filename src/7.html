@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Website Muhamad Dzikrulloh</title>
+  <link rel="shortcut icon" href="/Public/LOGO.png">
+</head>
+<body style="font-family: Montserrat;">
+
+  <!-- Navbar -->
+<header class="bg-white  body-font shadow-md fixed w-full z-50" style="top: 0px;">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="color:white;">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <span class="ml-3 text-4xl" style="font-family: Stick;">Dz</span>
+    </a>
+    <nav class="md:ml-auto gap-3 flex flex-wrap items-center text-base justify-center text-black">
+      <a href="../index.html"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Home</a>
+      <a href="index.html"target="_blank" class="mr-5 hover:text-gray-900 hover:underline">Blog</a>
+      <a href="../index.html#about" target="_blank"class="mr-5 hover:text-gray-900 hover:underline">About</a>
+      <a href="../index.html#contact" target="_blank"class="mr-5 hover:text-gray-900 hover:underline">Contact</a>
+	  <a href="Portofolio.html" target="_blank"class="mr-5 hover:text-gray-900 hover:underline">Portofolio</a>
+    </nav>
+  </div>
+</header>
+<!--End Navbar -->
+<!-- Blog -->
+<section class="bg-white dark:bg-gray-900 mt-14">
+  <div class="container px-6 py-10 mx-auto">
+      <div class="text-center">
+          <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Welcome To My Blog</h1>
+
+          <p class="max-w-lg mx-auto mt-4 text-gray-500">
+            Sebuah Blog yang ditulis oleh saya sendiri
+          </p>
+      </div>
+<!-- Open blog 1 -->
+<div class="mt-5">
+    <div>
+        <div class="mt-5 mb-5">
+            <div  class=" mb-5 pb-14 font-semibold text-5xl text-center text-gray-800">
+               Tree
+            </div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/Stuktur data/Tree.png" alt="">
+            <div class="mt-3  ">
+            <h5 class="text-4xl font-semibold">Tree</h5> <br><br>
+           <span class="font-bold"> STRUKTUR POHON &  KUNJUNGAN POHON BINER  </span> <br>
+            DEFINISI POHON (TREE) <br><br>
+            Pohon (Tree) termasuk struktur non linear yang didefinisikan sebagai data yang terorganisir dari suatu item informasi cabang yang saling terkait <br><br>
+          <img class="w-20" src="../Public/tree/tree1.JPG" alt=""><br><br> <br>
+
+          <span class="font-bold"> Istilah – istilah Dalam Pohon </span> <br><br>
+          1.   Predesesor  Node yang berada diatas node tertentu.   (contoh :  B predesesor dari E dan F) <br>  2.   Succesor  Node yang berada dibawah node tertentu.  (contoh :  E dan F merupakan succesor dari B) <br>  3. Ancestor  Seluruh node yang terletak sebelum node tertentu dan  terletak pada jalur yang sama.   (contoh :  A dan B merupakan ancestor dari F)
+          <br>  4. Descendant  Seluruh node yang terletak sesudah node tertentu  dan terletak pada jalur yang sama.   (contoh :  F dan B merupakan ancestor dari A) <br> 5. Parent  Predesesor satu level diatas satu node  (contoh : B merupakan parent dari F)  <br> 6. Child  Succesor satu level dibawah satu node  (contoh : F merupakan child dari B) <br> 7. Sibling  Node yang memiliki parent yang sama dengan satu  node (contoh : E dan F adalah sibling)
+          <br> 11. Root (Akar)  Node khusus dalam tree yang tidak memiliki  predesesor (Contoh : A) <br> 12. Leaf (Daun)  Node-node dalam tree yang tidak memiliki daun  (contoh : Node E,F,C,G,H)  <br> 13. Degree (Derajat)  Banyaknya child yang dimiliki oleh suatu node  (contoh : Node A memiliki derajat 3, node B memiliki  derajat 2) <br>
+          <span class="font-bold"> ISTILAH-ISTILAH DASAR   </span> <br>
+          Pohon atau Tree adalah salah satu bentuk Graph terhubung yang tidak mengandung sirkuit. vt vtKarena merupakan Graph terhubung, maka pada Pohon (Tree) selalu terdapat Path atau Jalur yang menghubungkan setiap simpul dalam dua pohon.vt vt Pohon (Tree) dapat juga didefinisikan sebagai kumpulan elemen yang salah satu elemennya disebut dengan Akar (Root) dan sisa elemen lain (Simpul) yang terpecah menjadi sejumlah himpunan yang saling tidak berhubungan yang disebut dengan Subpohon (Subtree) atau cabang
+           <br><br> <span class="font-bold">Diketahui suatu bentuk Pohon Berakar T sebagai berikut :</span>
+          <img src="../Public/tree/tree2.png" style="width: 300px;" alt=""> <br> <br>
+
+          Pohon Diatas Mempunyai :
+          a. Simpul sebanyak = 8 dan edge = n - 1 = 8 – 1 = 7vrb. Root pada Pohon T diatas adalah Simpul Pvtc. Mempunyai daun (Leaf) = 4, yaitu = R, S, V dan W <br><br>
+          d. Level (tingkatan) Pohon = 4 yaitu :vt	Level 1 = Simpul Pvt	Level 2 = Simpul Q dan Tvt	Level 3 = Simpul R, S dan Uvt	Level 4 = Simpul V dan Wvte. Ketinggian atau kedalaman = jumlah level  = 4vtf.  Weight atau berat atau bobot = jumlah daun = 4vt vtDalam gambar Pohon T diatas dapat dibentuk  2 buah hutan (forest), bila simpul P dihilangkan, yaitu :    vt	Hutan 1 :  Q,R,S	vt	Hutan 2 :  T,U,V,W
+
+          <br><br>
+          Karakteristik Pohon Binar (Binary Tree) :vt 1. 	Setiap Simpul paling banyak hanya memiliki dua buah 	anak vt2. 	<br>Derajat Tertinggi dari setiap Simpul adalah dua.vt3. 	<br>Dibedakan antara Cabang Kiri dan Cabang Kanan.vt4.<br> 	Dimungkinkan tidak mempunyai Simpul vt vtBerikut ini diberikan contoh gambar Pohon Binar (Binary Tree) dengan Cabang Kiri dan  Cabang Kanan.<br><br>
+          <span class="font-bold"> ISTILAH PADA POHON BINER</span><br>
+          Pohon Biner Penuh <br>
+          (Full Binary Tree)
+          Semua simpul (kecuali daun) memiliki 2 anak dan tiap cabang memiliki panjang ruas yang sama<br> <br>
+          Pohon Biner Lengkap <br>
+          (Complete Binary Tree)
+          Hampir sama dengan Pohon Biner Penuh, semua simpul (kecuali daun) memiliki 2 anak tetapi tiap cabang memiliki panjang ruas berbeda<br><br>
+          Pohon Biner Similer<br>
+	        Dua pohon yang memiliki struktur yang sama tetapi informasinya berbeda <br><br>
+          Pohon Biner Ekivalent<br>
+	Dua pohon yang memiliki struktur dan informasi yang sama<br><br>
+  Pohon Biner Miring (Skewed Tree)<br>
+	Dua pohon yang semua simpulnya mempunyai satu anak / turunan kecuali daun<br><br>
+  <span class="font-bold"> Penyajian Pohon Binar (Binary Tree)  </span> <br><br>
+  Tree dapat dibuat dengan menggunakan linked list secara rekursif.<br>
+
+Linked list yang digunakan adalah double linked list non circular<br>
+
+Data yang pertama kali masuk akan menjadi node root.<br>
+
+Data yang lebih kecil dari data node root akan masuk dan menempati node kiri dari node root, <br> sedangkan jika lebih besar dari data node root, akan masuk dan menempati node di sebelah kanan node root.<br>
+Bila diberikan untai  HAKJCBL, maka  proses untuk dapat membentuk pohon biner dari untai diatas adalah :1. Karakter pertama ‘H’ ditempatkan sebagai akar (root)2. Karakter ‘A’,karena lebih kecil dari ‘H’, maka akan 	menempati cabang kiri.3.	Karakter ‘K’, karena lebih besar dari ‘H’, maka akan 	menempati cabang kanan.4.	Karakter ‘J’, lebih besar dari ‘H’ dan kecil dari ‘K’, maka 	menempati cabang kiri ‘K’.5. Karakter ‘C’,karena lebih besar dari ‘A’, maka akan 	menempati cabang kanan.6.	Karakter ‘B’, karena lebih kecil dari ‘C’, maka akan 	menempati cabang kiri.7.	Karakter ‘L’, lebih besar dari ‘K’, maka 	menempati  	cabang kiri kanan. 
+<br><br>
+<span class="font-bold"> Kunjungan Pada Pohon Biner</span> <br><br>
+
+Kunjungan pada pohon biner merujuk pada proses mengunjungi setiap simpul atau elemen dalam pohon biner. Pohon biner adalah struktur data yang terdiri dari simpul-simpul yang terhubung dengan menggunakan tepi-tepi. Setiap simpul dalam pohon biner memiliki maksimal dua anak, yaitu anak kiri dan anak kanan.
+Kunjungan pada pohon biner dapat dilakukan dengan tiga metode yang umum digunakan:<br><br>
+
+    Preorder: Pada metode ini, kunjungan dimulai dari simpul akar, kemudian dilanjutkan ke anak kiri, dan terakhir ke anak kanan.<br>
+    Inorder: Pada metode ini, kunjungan dimulai dari anak kiri, kemudian ke simpul akar, dan terakhir ke anak kanan.<br>
+    Postorder: Pada metode ini, kunjungan dimulai dari anak kiri, kemudian ke anak kanan, dan terakhir ke simpul akar.<br>
+
+Kunjungan pada pohon biner berguna dalam berbagai aplikasi, seperti pencarian, pengurutan, dan manipulasi data dalam struktur pohon biner. Metode kunjungan yang digunakan tergantung pada kebutuhan spesifik dari aplikasi yang sedang digunakan.<br><br>
+
+
+
+
+          <p class="mt-3 text-sm text-blue-500 pb-10">Penulis Muhamad Dzikrulloh</p>
+        </div>
+    </div>
+
+<!-- Artikel  1-->
+          <div class="">
+              <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/1.png" alt="">
+
+              <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+                  <a href="1.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                    Pengenalan Stuktur Data Dan Algoritma 
+                  </a>
+
+                  <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                    Struktur data adalah pengaturan data di dalam memori komputer. dengan cara menyimpan, mengambil, dan menyusun data. Struktur data memungkinkan data yang ada di komputer lebih mudah diakses dan diperbarui.
+                  </p>
+
+                  <a href="1.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+              </div>
+          </div>
+      </div>
+  </div>
+<!-- Artikel  2-->
+<div class="container px-6 py-10 mx-auto">
+<div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+  <div>
+      <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/2.png" alt="">
+
+      <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+          <a href="2.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+            Tipe Data 
+          </a>
+
+          <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+            Adalah tipe data yang hanya bernilai benar (true) atau salah (false). Jangkauan (nilai yang mungkin) hanya 2 yaitu true atau false.
+            ADT (Abstract Data Type) atau Tipe Data Bentukan 
+          </p>
+
+          <a href="2.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+      </div>
+  </div>
+
+  <div>
+      <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/3.png" alt="">
+
+      <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+          <a href="3.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+            ARRAY DIMENSI 1 & 2 
+          </a>
+
+          <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+            • Array dapat didefinisikan sebagai suatu himpunan hingga elemen yang terurut dan homogen. Terurut : Dapat diartikan bahwa elemen tersebut dapat diidentifikasi sebagai elemen pertama, elemen kedua dan seterusnya sampai elemen ke-n. 
+          </p>
+
+          <a href="3.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+      </div>
+  </div>
+</div>
+</div>
+<!-- Artikel  3-->
+<div class="container px-6 py-10 mx-auto">
+  <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+    <div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/4.png" alt="">
+  
+        <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="4.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                STACK 
+            </a>
+  
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                • Penyimpanan dan pengambilan data yang sangat efektif apabila data yang terakhir masuk adalah data yang akan diambil pertama kali.
+                • Tumpukan memungkinkan akses ke satu item data saja, yaitu item terakhir yang disisipkan. 
+            </p>
+  
+            <a href="4.html" class="mt-3 text-sm text-blue-500">Read More..</a>
+        </div>
+    </div>
+  
+    <div>
+        <img class="relative z-10 object-cover w-full rounded-md h-96" src="/Public/artikel/5.png" alt="">
+  
+        <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-gray-900">
+            <a href="5.html" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl">
+                Queue (Antrian) 
+            </a>
+  
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                1. Queue (antrian) adalah struktur data dimana proses pengambilan dan penambahan element dilakukan pada ujung yang berbeda.
+                2. Queue mengikuti konsep FIFO.
+              
+            </p>
+  
+            <a href="5.html" class="mt-3 text-sm text-blue-500">  Read More..</a>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End Blog -->
+<!-- Footers -->
+<footer class="bg-[#4F927B] text-white mt-16">
+    <div class="flex">
+<div class="w-60 h-20 flex items-center justify-center">
+    <span class="ml-3 text-4xl text-white" style="font-family: Stick;">Dz</span>
+</div>
+<div class=" w-full flex items-center justify-center mr-28 text-center">@2023 Muhamad Dzikrulloh copy right</div>
+</div>
+
+</footer>
+
+</body>
+</html>
